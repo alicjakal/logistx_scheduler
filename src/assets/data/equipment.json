@@ -1,0 +1,38 @@
+[
+    {
+        "id"           : 1,
+        "name"         : "Video camera"
+    },
+    {
+        "id"           : 2,
+        "name"         : "Microphone"
+    },
+    {
+        "id"           : 3,
+        "name"         : "Toolbox"
+    },
+    {
+        "id"           : 4,
+        "name"         : "Surveillance van"
+    },
+    {
+        "id"           : 5,
+        "name"         : "Secret device"
+    },
+    {
+        "id"           : 6,
+        "name"         : "Binoculars"
+    },
+    {
+        "id"           : 7,
+        "name"         : "Helicopter"
+    },
+    {
+        "id"           : 8,
+        "name"         : "Hammer"
+    },
+    {
+        "id"           : 9,
+        "name"         : "First aid kit"
+    }
+]

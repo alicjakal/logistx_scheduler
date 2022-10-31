@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "name": "Fun task",
+    "duration": 4,
+    "durationUnit" : "d",
+    "equipment": []
+  },
+  {
+    "id": 2,
+    "name": "Medium fun task",
+    "duration": 8,
+    "durationUnit" : "d",
+    "equipment": []
+  },
+  {
+    "id": 3,
+    "name": "Outright boring task",
+    "duration": 2,
+    "durationUnit" : "d",
+    "equipment": []
+  },
+  {
+    "id": 4,
+    "name": "Inspiring task",
+    "duration": 2,
+    "durationUnit" : "d",
+    "equipment": []
+  },
+  {
+    "id": 5,
+    "name": "Mysterious task",
+    "duration": 2,
+    "durationUnit" : "d",
+    "equipment": []
+  },
+  {
+    "id": 6,
+    "name": "Answer forum question",
+    "duration": 4,
+    "durationUnit" : "d",
+    "equipment": []
+  },
+  {
+    "id": 7,
+    "name": "Gym",
+    "duration": 1,
+    "durationUnit" : "d",
+    "equipment": []
+  },
+  {
+    "id": 9,
+    "name": "Book flight",
+    "duration": 7,
+    "durationUnit" : "d",
+    "equipment": []
+  },
+  {
+    "id": 10,
+    "name": "Customer support call",
+    "duration": 3,
+    "durationUnit" : "d",
+    "equipment": []
+  },
+  {
+    "id": 11,
+    "name": "Angular bug fix",
+    "duration": 3,
+    "durationUnit" : "d",
+    "equipment": []
+  },
+  {
+    "id": 12,
+    "name": "React feature fix",
+    "duration": 2,
+    "durationUnit" : "d",
+    "equipment": []
+  }
+]

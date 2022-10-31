@@ -1,0 +1,10 @@
+{
+  "dependencies": [
+    {
+      "src": "../_shared",
+      "out": "../_shared/dist"
+    }
+  ],
+  "title": "Drag from Grid",
+  "description": "The example of dragging unplanned tasks from a grid to the Scheduler in Angular"
+}

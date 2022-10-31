@@ -1,0 +1,53 @@
+<div style="display: flex; justify-content: space-between; padding: 10px">
+    <div>
+        <h2>Scheduler</h2>
+    </div>
+    <div>
+        <mat-form-field style="margin-right: 10px">
+            <mat-label>User</mat-label>
+            <mat-select (selectionChange)="onChangeUserPicker($event)" [(ngModel)]="selectedUser">
+                <mat-option *ngFor="let user of users" [value]="user.id">
+                    {{user.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    <!--    <button mat-icon-button (click)="goToPreviousWeek()"><</button>-->
+        <mat-form-field>
+            <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker" placeholder="Choose a week" (dateChange)="onDatePickerChange($event.target.value)" [value]="startDate">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </div>
+<!--    <button mat-icon-button (click)="goToNextWeek()"> > </button>-->
+</div>
+<div id="content" style="border: 1px solid #ccc">
+    <bry-scheduler
+        #scheduler
+        [barMargin]         = "schedulerConfig.barMargin"
+        [columns]           = "schedulerConfig.columns"
+        [eventColor]        = "schedulerConfig.eventColor"
+        [rowHeight]         = "schedulerConfig.rowHeight"
+        [startDate]         = "startDate"
+        [endDate]           = "endDate"
+        [viewPreset]        = "schedulerConfig.viewPreset"
+        [eventMenuFeature]  = "schedulerConfig.eventMenuFeature"
+        [stripeFeature]     = "schedulerConfig.stripeFeature"
+        [timeRangesFeature] = "schedulerConfig.timeRangesFeature"
+        [resourceImagePath] = "schedulerConfig.resourceImagePath"
+        [eventBodyTemplate] = "schedulerConfig.eventBodyTemplate"
+        [eventRenderer]     = "schedulerConfig.eventRenderer"
+        [eventEditFeature]  = "schedulerConfig.eventEditFeature"
+        [scheduleMenuFeature]  = "schedulerConfig.scheduleMenuFeature"
+        [createEventOnDblClick]  = "false"
+        [events]            = "events"
+        [resources]         = "users"
+        (onSchedulerEvents) = "dispatchEvent($event)"
+    ></bry-scheduler>
+    <app-event-grid></app-event-grid>
+    <div class="equipment-container">
+        <app-equipment-grid #equipmentGrid [isFilter]="true"></app-equipment-grid>
+        <app-extra-grid #extraGrid [isFilter]="true"></app-extra-grid>
+        <app-user-grid #userGrid [isFilter]="true"></app-user-grid>
+    </div>
+</div>
+<div style="height: 10px"></div>
